@@ -6,14 +6,19 @@
   align-content: center;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  padding: 4rem 4rem;
+  padding: 4rem;
   min-height: 100vh;
   overflow: hidden;
+
+  @media screen and (max-width: 37.5em) {
+    padding: 4rem 2rem;
+  }
 
   &__title {
     grid-column: 1 / -1;
     text-transform: capitalize;
     font-size: 4rem;
+    letter-spacing: 2px;
     animation: moveLeftIn 3s ease backwards;
   }
 

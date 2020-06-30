@@ -12,8 +12,11 @@
   min-height: 100vh;
 
   @media screen and (max-width: 50em) {
-    position: absolute;
+    position: fixed;
     width: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
     opacity: 0;
     justify-content: center;
     background-color: rgba(#f6f6f6, 0.9);
