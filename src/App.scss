@@ -13,8 +13,12 @@
 html {
   font-size: 62.5%; //1rem = 10px
 
-  @media screen and (max-width: 75em) {
+  @media screen and (max-width: 50em) {
     font-size: 50%;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    font-size: 45%;
   }
 }
 
@@ -31,7 +35,7 @@ body {
   line-height: 1.6;
   font-weight: 600;
   color: var(--dark);
-  overflow: hidden;
+  backface-visibility: hidden;
 }
 
 .content {
@@ -76,5 +80,29 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    background-color: var(--grey-light-1);
+    color: var(--dark-1);
+    transition: var(--transition);
+    filter: brightness(100%);
+  }
+
+  &:hover {
+    transform: scaleX(1.1);
+    filter: brightness(60%);
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 }

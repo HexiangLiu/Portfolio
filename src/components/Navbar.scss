@@ -1,5 +1,4 @@
 .navbar {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +7,9 @@
   letter-spacing: 3px;
   position: relative;
   transition: var(--transition);
+  backface-visibility: none;
+  z-index: 1;
+  min-height: 100vh;
 
   @media screen and (max-width: 50em) {
     position: absolute;
@@ -92,8 +94,8 @@
 }
 
 .navbar__toggle {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   font-size: 3rem;
   top: 1rem;
   left: 1rem;
@@ -116,4 +118,8 @@
 .show {
   width: 40%;
   opacity: 1;
+
+  @media screen and (max-width: 37.5em) {
+    width: 30%;
+  }
 }

@@ -1,0 +1,26 @@
+.projects {
+  background-image: linear-gradient(to right bottom, #f6f6f6, #bcbab8);
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  padding: 4rem 4rem;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &__title {
+    grid-column: 1 / -1;
+    text-transform: capitalize;
+    font-size: 4rem;
+    animation: moveLeftIn 3s ease backwards;
+  }
+
+  &__intro {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    animation: moveRightIn 3s ease backwards;
+  }
+}
