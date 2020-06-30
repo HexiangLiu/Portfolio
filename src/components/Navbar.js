@@ -29,7 +29,7 @@ export default function Navbar() {
           <h1>Henry Liu</h1>
           <p>
             <FaEnvelope />
-            <span>hl3194@columbia.edu</span>
+           hl3194@columbia.edu
           </p>
         </div>
         <div className="navbar__navigation">
