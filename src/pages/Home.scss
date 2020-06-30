@@ -1,0 +1,73 @@
+.home {
+  background-image: linear-gradient(
+      to right,
+      rgba(#eeeeee, 0.7),
+      rgba(#bcbab8, 0.7)
+    ),
+    url(../images/Hexiang_Liu-1.jpg);
+  background-size: cover;
+  background-position: 30% 45%;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: var(--dark-1);
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem 10rem;
+
+  @media screen and (max-width: 50em) {
+    padding: 2rem 4rem;
+  }
+}
+
+.greeting {
+  text-transform: capitalize;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  animation: moveLeftIn 3s ease backwards;
+  font-family: 'Galada', cursive;
+}
+
+.intro {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  animation: moveRightIn 3s ease 0.5s backwards;
+  font-family: 'Galada', cursive;
+}
+
+.about {
+  animation: moveBottomIn 2s ease 1s backwards;
+}
+
+.skill-box {
+  text-align: center;
+  h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  animation: moveBottomIn 2s ease 2s backwards;
+}
+
+.skills {
+  display: flex;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.skill {
+  transition: var(--transition);
+}
+.skill:hover {
+  background-color: var(--dark);
+  color: #fff;
+}

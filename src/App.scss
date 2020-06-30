@@ -1,0 +1,80 @@
+:root {
+  --grey-light: #f6f6f6;
+  --grey-light-1: #eae9e9;
+  --grey-light-2: #d4d7dd;
+  --dark: #777777;
+  --dark-1: #444444;
+  --dark-2: #333333;
+
+  //animation
+  --transition: all 0.3s;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+
+  @media screen and (max-width: 75em) {
+    font-size: 50%;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--dark);
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+
+  @media screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes moveLeftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveBottomIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
