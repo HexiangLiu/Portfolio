@@ -5,5 +5,6 @@ This is a single page portfolio deisgned by myself using HTML, CSS, Javascript, 
 ### Deploy Site
 https://henry-liu-portfolio.netlify.app/
 
+![website screenshot](/src/images/portfolio.JPG)
 
 
