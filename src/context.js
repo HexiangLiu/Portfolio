@@ -12,7 +12,8 @@ const projectData = [
     id: 1,
     img: portfolio,
     title: 'portfolio',
-    description: 'My pretty cool single page React Portfolio',
+    description:
+      'My pretty cool single page React Portfolio designed by me using HTML, CSS, Sass, Javascript, React and React Router',
     site: 'https://henry-liu-portfolio.netlify.app/',
     code: 'https://github.com/Henry-Liu1997/Portfolio',
   },
@@ -21,7 +22,7 @@ const projectData = [
     img: beach,
     title: 'beach resort',
     description:
-      'A class based react project designed with react router, styled componets',
+      'A luxurious beach resort project designed by me using HTML, CSS, Sass, Javascript, React, React Router and Styled componets ',
     site: 'https://henry-react-beach-resort.netlify.app/',
     code: 'https://github.com/Henry-Liu1997/react-beach-resort',
   },
@@ -29,7 +30,8 @@ const projectData = [
     id: 3,
     img: todoList,
     title: 'todo list',
-    description: 'A todoList built with React',
+    description:
+      'A todoList designed by me using HTML, CSS, Sass, Javascript, React',
     site: 'https://henry-todolist.netlify.app/',
     code: 'https://github.com/Henry-Liu1997/react-todolist',
   },
@@ -37,7 +39,8 @@ const projectData = [
     id: 4,
     img: budgetCalculator,
     title: 'budget calculator',
-    description: 'A function based react project bulit with using react hooks',
+    description:
+      'A budget calculator designed by me using HTML, CSS, Javascript, BootStrap, React',
     site: 'https://henry-react-budget-calculator.netlify.app/',
     code: 'https://github.com/Henry-Liu1997/react-budget-calculator',
   },

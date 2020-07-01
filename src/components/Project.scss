@@ -8,7 +8,7 @@
   overflow: hidden;
   transition: var(--transition);
   animation: moveBottomIn 2s ease backwards;
-
+  align-items: center;
   box-shadow: 0 2rem 2rem rgba(#444444, 0.3);
 
   &:hover {
@@ -31,6 +31,7 @@
     background-color: var(--dark-2);
     grid-row: 6 / 7;
     grid-column: 1/-1;
+    align-self: stretch;
   }
 
   &__description {
@@ -41,7 +42,7 @@
     opacity: 0;
     transition: var(--transition);
     background-color: rgba(#444444, 0.3);
-    transform: translateY(5px);
+    transform: translateY(6px);
   }
 
   .icon {

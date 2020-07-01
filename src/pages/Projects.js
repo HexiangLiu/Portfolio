@@ -5,7 +5,7 @@ import Project from '../components/Project';
 
 import './Projects.scss';
 
-export default function Projects(props) {
+export default function Projects() {
   const items = useContext(MainContext);
 
   return (
