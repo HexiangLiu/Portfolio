@@ -1,6 +1,7 @@
 import React from 'react';
 
 import beach from './images/beach_resort.jpg';
+import cocktail from './images/cocktail.JPG';
 import todoList from './images/todolist.jpg';
 import budgetCalculator from './images/budgetCalculator.jpg';
 import portfolio from './images/portfolio.JPG';
@@ -28,6 +29,15 @@ const projectData = [
   },
   {
     id: 3,
+    img: cocktail,
+    title: 'cocktail',
+    description:
+      'A cockitail search website designed by using HTML, Sass, React and third party api. Powered by TheCocktailDB',
+    site: 'https://henry-cocktail.netlify.app/',
+    code: 'https://github.com/Henry-Liu1997/react-cocktail',
+  },
+  {
+    id: 4,
     img: todoList,
     title: 'todo list',
     description:
@@ -36,7 +46,7 @@ const projectData = [
     code: 'https://github.com/Henry-Liu1997/react-todolist',
   },
   {
-    id: 4,
+    id: 5,
     img: budgetCalculator,
     title: 'budget calculator',
     description:
