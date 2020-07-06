@@ -5,6 +5,7 @@ import cocktail from './images/cocktail.JPG';
 import todoList from './images/todolist.jpg';
 import budgetCalculator from './images/budgetCalculator.jpg';
 import portfolio from './images/portfolio.JPG';
+import counter from './images/counter.JPG';
 
 const MainContext = React.createContext();
 
@@ -38,6 +39,15 @@ const projectData = [
   },
   {
     id: 4,
+    img: counter,
+    title: 'counter',
+    description:
+      'A counter designed by using HTML, CSS, Javascirpt, React, Redux and Redux Thunk. Used third party API to get the real time temperature ℉ in New York City and Beijing by appling axios and Redux Thunk.',
+    site: 'https://henry-react-redux-counter.netlify.app/',
+    code: 'https://github.com/Henry-Liu1997/react-redux-counter',
+  },
+  {
+    id: 5,
     img: todoList,
     title: 'todo list',
     description:
@@ -46,7 +56,7 @@ const projectData = [
     code: 'https://github.com/Henry-Liu1997/react-todolist',
   },
   {
-    id: 5,
+    id: 6,
     img: budgetCalculator,
     title: 'budget calculator',
     description:
