@@ -21,6 +21,7 @@ export default function Home() {
           <li className="skill">HTML</li>
           <li className="skill">CSS</li>
           <li className="skill">Javascript</li>
+          <li className="skill">SASS</li>
           <li className="skill">BootStrap</li>
           <li className="skill">React</li>
           <li className="skill">Redux</li>

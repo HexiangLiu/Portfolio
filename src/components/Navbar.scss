@@ -36,12 +36,21 @@
       margin-bottom: 1rem;
       font-family: 'Yellowtail', cursive;
       font-size: 3rem;
+
+      @media screen and (max-width: 25em) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       font-size: 1rem;
-
       letter-spacing: 0;
+    }
+  }
+
+  &__icon--mail {
+    @media screen and (max-width: 25em) {
+      display: none;
     }
   }
 
@@ -59,6 +68,10 @@
       text-transform: capitalize;
       position: relative;
       margin-bottom: 2rem;
+
+      @media screen and (max-width: 25em) {
+        font-size: 1rem;
+      }
     }
 
     &::after {

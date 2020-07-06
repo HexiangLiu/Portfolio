@@ -28,8 +28,8 @@ export default function Navbar() {
           />
           <h1>Henry Liu</h1>
           <p>
-            <FaEnvelope />
-           hl3194@columbia.edu
+            <FaEnvelope className="navbar__icon--mail" />
+            hl3194@columbia.edu
           </p>
         </div>
         <div className="navbar__navigation">
