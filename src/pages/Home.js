@@ -8,12 +8,11 @@ export default function Home() {
       <h1 className="greeting">hi, i am henry</h1>
       <h2 className="intro">an aspiring web developer</h2>
       <p className="about">
-        I have a deep understanding of Javascript, CSS and HTML and a good gasp
-        of some modern frameworks such as React. Familiar with back end
-        development using Node.js. Intermediate data analysis skills using
-        python. Moreover, I am a tech-driven person with strong enthusiasms for
-        learning and self-teaching which I think it's the key to avoid falling
-        behind in this rapidly changing era
+        Lifelong seeker of knowledge and Mechanical Engineering graduate who
+        currently has their sights set on a full-time web development position.
+        Strong self-teaching ability and can quickly master a new skill.
+        Effective at combining creativity and problem solving to develop
+        user-friendly applications.
       </p>
       <div className="skill-box">
         <h3>my skills</h3>
@@ -21,6 +20,7 @@ export default function Home() {
           <li className="skill">HTML</li>
           <li className="skill">CSS</li>
           <li className="skill">Javascript</li>
+          <li className="skill">jQuery</li>
           <li className="skill">SASS</li>
           <li className="skill">BootStrap</li>
           <li className="skill">React</li>

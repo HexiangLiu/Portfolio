@@ -5,7 +5,7 @@ import './Project.scss';
 
 export default function Project({ project }) {
   const { img, title, description, site, code } = project;
-  console.log(img, title, description);
+
   return (
     <article className="project">
       <img className="project__image" src={img} alt="project-1" />

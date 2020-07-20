@@ -1,25 +1,28 @@
-.navbar {
+.aside {
+  background-color: var(--grey-light);
+  transition: var(--transition);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--grey-light);
-  letter-spacing: 3px;
-  position: relative;
-  transition: var(--transition);
-  backface-visibility: none;
-  z-index: 1;
   min-height: 100vh;
 
   @media screen and (max-width: 50em) {
     position: fixed;
-    width: 0;
     top: 0;
-    left: 0;
     bottom: 0;
-    opacity: 0;
-    justify-content: center;
-    background-color: rgba(#f6f6f6, 0.9);
+    width: 0;
+    z-index: 10;
+    overflow: hidden;
+  }
+}
+
+.navbar {
+  letter-spacing: 3px;
+  width: 100%;
+
+  @media screen and (max-width: 50em) {
+    width: 30vw;
   }
 
   & > * {
@@ -137,5 +140,11 @@
 
   @media screen and (max-width: 37.5em) {
     width: 30%;
+  }
+}
+
+.aside {
+  @media screen and (min-width: 50em) {
+    width: 100%;
   }
 }

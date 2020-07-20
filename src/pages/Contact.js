@@ -19,7 +19,7 @@ export default function Contact() {
           <FaLinkedin className="contact__icon" />
         </a>
         <a
-          href="https://github.com/Henry-Liu1997"
+          href="https://github.com/HexiangLiu"
           target="__blank"
           className="contact__link"
         >

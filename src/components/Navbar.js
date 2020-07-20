@@ -5,9 +5,10 @@ import {
   FaGithub,
   FaEnvelope,
   FaAlignJustify,
+  FaRegWindowClose,
 } from 'react-icons/fa';
 
-import profile_photo from '../images/Hexiang_Liu.jpg';
+import profile_photo from '../assets/Hexiang_Liu.jpg';
 
 import './Navbar.scss';
 
@@ -15,11 +16,11 @@ export default function Navbar() {
   const [display, setDisplay] = useState(false);
 
   return (
-    <>
+    <aside className={`aside ${display && 'show'}`}>
       <span className="navbar__toggle" onClick={() => setDisplay(!display)}>
-        <FaAlignJustify />
+        {display ? <FaRegWindowClose /> : <FaAlignJustify />}
       </span>
-      <nav className={`navbar ${display && 'show'}`}>
+      <nav className="navbar">
         <div className="navbar__info">
           <img
             className="navbar__img"
@@ -47,11 +48,11 @@ export default function Navbar() {
           <a href="https://www.linkedin.com/in/hexiang-liu/" target="__blank">
             <FaLinkedin className="navbar__icon" />
           </a>
-          <a href="https://github.com/Henry-Liu1997" target="__blank">
+          <a href="https://github.com/HexiangLiu" target="__blank">
             <FaGithub className="navbar__icon" />
           </a>
         </div>
       </nav>
-    </>
+    </aside>
   );
 }

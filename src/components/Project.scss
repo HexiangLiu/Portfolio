@@ -20,7 +20,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 4px 4px 0 0;
-    grid-row: 1 / 6;
+    grid-row: 1 / 7;
     grid-column: 1 /-1;
     transition: var(--transition);
     overflow: hidden;
@@ -29,16 +29,16 @@
   &__title {
     text-transform: capitalize;
     background-color: var(--dark-2);
-    grid-row: 6 / 7;
+    grid-row: 7/ 8;
     grid-column: 1/-1;
     align-self: stretch;
   }
 
   &__description {
     background-color: var(--dark-2);
-    font-size: 1.5rem;
-    grid-row: 2 / 6;
-    grid-column: 2 / 6;
+    font-size: 2rem;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
     opacity: 0;
     transition: var(--transition);
     background-color: rgba(#444444, 0.3);

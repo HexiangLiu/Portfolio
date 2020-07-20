@@ -5,7 +5,7 @@
   justify-content: center;
   align-content: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
   padding: 4rem;
   min-height: 100vh;
   overflow: hidden;
@@ -34,6 +34,13 @@
 
     @media screen and (max-width: 25em) {
       text-align: center;
+    }
+  }
+
+  &__filter {
+    transition: var(--transition);
+    &:hover {
+      color: var(--grey-light);
     }
   }
 }
