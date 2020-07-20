@@ -6,13 +6,15 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  position: relative;
 
   @media screen and (max-width: 50em) {
     position: fixed;
     top: 0;
     bottom: 0;
+    left: 0;
     width: 0;
-    z-index: 10;
+    z-index: 1;
     overflow: hidden;
   }
 }
