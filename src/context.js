@@ -8,6 +8,9 @@ import portfolio from './assets/portfolio.JPG';
 import counter from './assets/counter.JPG';
 import ecommerce from './assets/ecommerce.JPG';
 import covid from './assets/COVID.jpg';
+import weather from './assets/weather.JPG';
+import schedule from './assets/schedule.JPG';
+import quiz from './assets/quiz.JPG';
 
 const MainContext = React.createContext();
 
@@ -90,6 +93,37 @@ const projectData = [
       'A webpage that help New York residents to find the nearest testing locations and free meals locations with their zip code. •	Lead developer of a group of four. Wrote down pseudocode, assigned tasks to team members and handled Github workflow',
     site: 'https://hexiangliu.github.io/COVID-Project/',
     code: 'https://github.com/HexiangLiu/COVID-Project',
+  },
+  {
+    id: 9,
+    img: weather,
+    title: 'Weather Dashboard',
+    topic: 'jQuery',
+    description:
+      "A weather-dashboard developed by using HTML, CSS, BootStrap, Javascript and JQuery. Powerd by third party API https://openweathermap.org/. You can serach for current and next five day's weather conditions of any cities",
+    site: 'https://henry-liu1997.github.io/weather-dashboard/',
+    code: 'https://github.com/HexiangLiu/weather-dashboard',
+  },
+  {
+    id: 10,
+    img: schedule,
+    title: 'Workday Schedule',
+    topic: 'jQuery',
+    description:
+      'A simple work day scheduler desinged using HTML,Javascript,CSS and JQuery. Integrated with localstorage API.',
+    site: 'https://henry-liu1997.github.io/work-day-scheduler/',
+    code: 'https://github.com/HexiangLiu/work-day-scheduler',
+  },
+
+  {
+    id: 11,
+    img: quiz,
+    title: 'Code Quiz',
+    topic: 'jQuery',
+    description:
+      "The quiz has 6 questions. And you have to complete it within one miniute. Everytime you enter a correct answer you will get 10 points otherwise you will lose 10 points and the time will be subtracted by 10 from the clock. The game will end when all questions are answered or the timer reaches 0. Then you can save my initials and score and chekout all player's score by clicking the view player's score dropdown.",
+    site: 'https://henry-liu1997.github.io/Web-APIs-Code-Quiz/',
+    code: 'https://github.com/HexiangLiu/Web-APIs-Code-Quiz',
   },
 ];
 
