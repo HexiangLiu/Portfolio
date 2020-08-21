@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaBattleNet, FaGithub } from 'react-icons/fa';
 
 import './Project.scss';
@@ -6,9 +6,49 @@ import './Project.scss';
 export default function Project({ project }) {
   const { img, title, description, site, code } = project;
 
+  useEffect(() => {
+    const projects = document.querySelectorAll('.project');
+    const images = document.querySelectorAll('.project__image');
+
+    const loadProject = (element) => {
+      // element.classList.add('visible');
+      element.style.opacity = 1;
+    };
+
+    const loadImage = (element) => {
+      element.setAttribute('src', element.getAttribute('data-src'));
+    };
+
+    const observer1 = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadProject(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.8 }
+    );
+
+    const observer2 = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadImage(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.8 }
+    );
+    projects.forEach((project) => observer1.observe(project));
+    images.forEach((image) => observer2.observe(image));
+  }, []);
+
   return (
     <article className="project">
-      <img className="project__image" src={img} alt="project-1" />
+      <img className="project__image" data-src={img} alt="project-1" />
       <h2 className="project__title">{title}</h2>
       <p className="project__description">{description}</p>
       <a className="btn project__btn-1" href={site} target="blank">

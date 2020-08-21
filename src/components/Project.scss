@@ -1,13 +1,15 @@
 .project {
   color: var(--grey-light);
+  // opacity: 0;
   text-align: center;
   display: grid;
+  opacity: 0;
 
   grid-template-rows: repeat(7, 4rem);
   grid-template-columns: repeat(6, 1fr);
   overflow: hidden;
   transition: var(--transition);
-  animation: moveBottomIn 2s ease backwards;
+  // animation: moveBottomIn 2s ease backwards;
   align-items: center;
   box-shadow: 0 2rem 2rem rgba(#444444, 0.3);
 
