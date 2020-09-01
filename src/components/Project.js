@@ -4,7 +4,7 @@ import { FaBattleNet, FaGithub } from 'react-icons/fa';
 import './Project.scss';
 
 export default function Project({ project }) {
-  const { img, title, description, site, code } = project;
+  const { img, title, description, site, code, keywords } = project;
 
   useEffect(() => {
     const projects = document.querySelectorAll('.project');
@@ -48,16 +48,30 @@ export default function Project({ project }) {
 
   return (
     <article className="project">
-      <img className="project__image" data-src={img} alt="project-1" />
-      <h2 className="project__title">{title}</h2>
-      <p className="project__description">{description}</p>
-      <a className="btn project__btn-1" href={site} target="blank">
-        <FaBattleNet className="icon" /> view site
-      </a>
-      <a className="btn project__btn-2" href={code} target="blank">
-        <FaGithub className="icon" />
-        code
-      </a>
+      <div className="project__img--container">
+        <img className="project__image" data-src={img} alt="project-1" />
+        <p className="project__btn">
+          <a className="btn project__btn--1" href={site} target="blank">
+            <FaBattleNet className="icon" /> view site
+          </a>
+          <a className="btn project__btn--2" href={code} target="blank">
+            <FaGithub className="icon" />
+            code
+          </a>
+        </p>
+      </div>
+      <div className="project__detail">
+        <h3 className="project__title">{title}</h3>
+        <p className="project__description">{description}</p>
+
+        <ul className="project__skills">
+          {keywords.map((keyword, index) => (
+            <li key={index} className="project__skill">
+              {keyword}
+            </li>
+          ))}
+        </ul>
+      </div>
     </article>
   );
 }

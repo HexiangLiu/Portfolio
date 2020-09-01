@@ -1,4 +1,10 @@
 .aside {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40rem;
   background-color: var(--grey-light);
   transition: var(--transition);
   display: flex;
@@ -6,23 +12,23 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  position: relative;
 
-  @media screen and (max-width: 50em) {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+  @media screen and (max-width: 75em) {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 68.75em) {
     width: 0;
-    z-index: 1;
     overflow: hidden;
   }
 }
 
 .navbar {
+  // position: relative;
   letter-spacing: 3px;
   width: 100%;
 
-  @media screen and (max-width: 50em) {
+  @media screen and (max-width: 68.75em) {
     width: 30vw;
   }
 
@@ -130,7 +136,7 @@
     transform: translateY(1px);
   }
 
-  @media screen and (max-width: 50em) {
+  @media screen and (max-width: 68.75em) {
     display: inline-block;
   }
 }
@@ -138,14 +144,16 @@
 .show {
   width: 40%;
   opacity: 1;
+}
 
-  @media screen and (max-width: 37.5em) {
-    width: 30%;
+@media screen and (min-width: 68.75em) {
+  .aside {
+    width: 30rem;
   }
 }
 
-.aside {
-  @media screen and (min-width: 50em) {
-    width: 100%;
+@media screen and (min-width: 75em) {
+  .aside {
+    width: 40rem;
   }
 }
