@@ -1,11 +1,9 @@
 import React from 'react';
 
+import contact from './assets/contact_keeper.JPG';
 import beach from './assets/beach_resort.jpg';
-import cocktail from './assets/cocktail.JPG';
-import todoList from './assets/todolist.jpg';
 import budgetCalculator from './assets/budgetCalculator.jpg';
 import portfolio from './assets/portfolio.JPG';
-import counter from './assets/counter.JPG';
 import ecommerce from './assets/ecommerce.JPG';
 import covid from './assets/COVID.jpg';
 
@@ -16,7 +14,6 @@ const projectData = [
     id: 1,
     img: ecommerce,
     title: 'ecommerce store',
-    topic: 'redux',
     description:
       'An ecommerce store website that allows users to register, login, shopping and complete orders using credit cards. Built font end using React, React Router, Redux, Sass. Developed back end with Strapi. Intergrated with Stripe in order to creat payment flows',
     site: 'https://henry-ecommerce-store.netlify.app/',
@@ -25,19 +22,28 @@ const projectData = [
   },
   {
     id: 2,
-    img: portfolio,
-    title: 'portfolio',
+    img: contact,
+    title: 'contact keeper',
     description:
-      'My single page React Portfolio designed by using HTML, Javascript, React and React Router. A fully responsive page Styled with customized Scss without using any CSS framwork. I also applied lazy loading with intersection observer in order to improve performace.',
-    site: 'https://henry-liu-portfolio.netlify.app/',
-    code: 'https://github.com/Henry-Liu1997/Portfolio',
+      'An ecommerce store website that allows users to register, login, shopping and complete orders using credit cards. Built font end using React, React Router, Redux, Sass. Developed back end with Strapi. Intergrated with Stripe in order to creat payment flows',
+    site: 'https://hexiang-contact-keeper.herokuapp.com/',
+    code: 'https://github.com/HexiangLiu/Contact-Keeper-Backend',
     keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
   },
   {
     id: 3,
+    img: portfolio,
+    title: 'portfolio',
+    description:
+      'My single page React Portfolio designed by using HTML, Javascript, React and React Router. A fully responsive page Styled with customized Scss without using any CSS framwork. I also applied lazy loading with intersection observer in order to improve performace.',
+    site: 'https://hexiangliu.netlify.app/',
+    code: 'https://github.com/HexiangLiu/Portfolio',
+    keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
+  },
+  {
+    id: 4,
     img: beach,
     title: 'beach resort',
-    topic: 'react',
     description:
       'A luxurious beach resort project designed by me using HTML, CSS, Sass, Javascript, React, React Router and Styled componets ',
     site: 'https://henry-react-beach-resort.netlify.app/',
@@ -45,42 +51,9 @@ const projectData = [
     keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
   },
   {
-    id: 4,
-    img: cocktail,
-    title: 'cocktail',
-    topic: 'react',
-    description:
-      'A cockitail search website designed by using HTML, Sass, React and third party api. Powered by TheCocktailDB',
-    site: 'https://henry-cocktail.netlify.app/',
-    code: 'https://github.com/Henry-Liu1997/react-cocktail',
-    keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
-  },
-  {
     id: 5,
-    img: counter,
-    title: 'counter',
-    topic: 'redux',
-    description:
-      'A counter designed by using HTML, CSS, Javascirpt, React, Redux and Redux Thunk. Used third party API to get the real time temperature ℉ in New York City and Beijing by appling axios and Redux Thunk.',
-    site: 'https://henry-react-redux-counter.netlify.app/',
-    code: 'https://github.com/Henry-Liu1997/react-redux-counter',
-    keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
-  },
-  {
-    id: 6,
-    img: todoList,
-    title: 'todo list',
-    description:
-      'A todoList designed by me using HTML, CSS, Sass, Javascript, React',
-    site: 'https://henry-todolist.netlify.app/',
-    code: 'https://github.com/Henry-Liu1997/react-todolist',
-    keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
-  },
-  {
-    id: 7,
     img: budgetCalculator,
     title: 'budget calculator',
-    topic: 'react',
     description:
       'A budget calculator designed by me using HTML, CSS, Javascript, BootStrap, React',
     site: 'https://henry-react-budget-calculator.netlify.app/',
@@ -88,10 +61,9 @@ const projectData = [
     keywords: ['React', 'React-router-dom', 'Lazy-loading', 'Scss'],
   },
   {
-    id: 8,
+    id: 6,
     img: covid,
     title: 'COVID-19 Resource',
-    topic: 'jQuery',
     description:
       'A webpage that help New York residents to find the nearest testing locations and free meals locations with their zip code. •	Lead developer of a group of four. Wrote down pseudocode, assigned tasks to team members and handled Github workflow',
     site: 'https://hexiangliu.github.io/COVID-Project/',

@@ -28,7 +28,7 @@ export default function Project({ project }) {
           }
         });
       },
-      { threshold: 0.8 }
+      { threshold: 0.7 }
     );
 
     const observer2 = new IntersectionObserver(
@@ -40,7 +40,7 @@ export default function Project({ project }) {
           }
         });
       },
-      { threshold: 0.8 }
+      { threshold: 0.7 }
     );
     projects.forEach((project) => observer1.observe(project));
     images.forEach((image) => observer2.observe(image));

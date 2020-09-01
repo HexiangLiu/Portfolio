@@ -58,8 +58,10 @@
   }
 
   &__title {
+    color: Var(--dark-1);
     text-transform: capitalize;
     font-size: 3rem;
+    transform: skew(5deg);
   }
 
   &__description {

@@ -15,28 +15,10 @@
     text-transform: capitalize;
     font-size: 4rem;
     letter-spacing: 2px;
-    animation: moveLeftIn 3s ease backwards;
     margin-bottom: 5rem;
 
     @media screen and (max-width: 25em) {
       text-align: center;
-    }
-  }
-
-  &__intro {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    animation: moveRightIn 3s ease backwards;
-
-    @media screen and (max-width: 25em) {
-      text-align: center;
-    }
-  }
-
-  &__filter {
-    transition: var(--transition);
-    &:hover {
-      color: var(--grey-light);
     }
   }
 }
