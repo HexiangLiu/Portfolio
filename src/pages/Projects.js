@@ -35,7 +35,7 @@ export default function Projects() {
           >
             Click here to{' '}
           </a>
-          checkout more on my github if you want!
+          checkout more on my github!
         </h2>
       </main>
     </>
