@@ -8,7 +8,7 @@ export default function Contact() {
     <section className="contact">
       <h1 className="contact__title">let's get in touch</h1>
       <h3 className="contact__intro">
-        I am actively seeking a web developer position!
+        I am actively seeking a Front End developer position!
       </h3>
       <div className="contact__detail">
         <a

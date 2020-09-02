@@ -22,3 +22,14 @@
     }
   }
 }
+
+.footer:visited,
+:link {
+  transition: var(--transition);
+  color: Var(--grey-light-1);
+  text-decoration: none;
+}
+
+.footer:hover {
+  color: var(--grey-light);
+}

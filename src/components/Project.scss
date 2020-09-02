@@ -75,6 +75,8 @@
   &__skills {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__skill {

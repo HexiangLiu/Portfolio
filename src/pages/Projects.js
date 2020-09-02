@@ -13,7 +13,6 @@ export default function Projects() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
       setOffestY(window.scrollY);
       return () => window.removeEventListener('scroll');
     });
@@ -23,11 +22,21 @@ export default function Projects() {
     <>
       {offsetY > 100 && <ScrollButton />}
       <main className="projects">
-        <h1 className="projects__title">Take a look at my project</h1>
+        <h1 className="projects__title">My projects</h1>
 
         {projects.map((project) => (
           <Project project={project} key={project.id} />
         ))}
+        <h2>
+          <a
+            className="footer"
+            href="https://github.com/HexiangLiu"
+            target="__blank"
+          >
+            Click here to{' '}
+          </a>
+          checkout more on my github if you want!
+        </h2>
       </main>
     </>
   );
